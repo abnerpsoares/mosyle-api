@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteRule ^([a-z]+)\/([A-Za-z0-9]+)\/([A-Za-z0-9]+)/? index.php?op=$1&urlid=$2&third=$3 [QSA]
+RewriteRule ^([a-z]+)\/([A-Za-z0-9]+)/? index.php?op=$1&urlid=$2 [QSA]
+RewriteRule ^([a-z]+)\/?$ index.php?op=$1 [QSA]
